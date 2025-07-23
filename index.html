@@ -1,29 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>بطاقات البنك العربي – تقديم آمن</title>
-  <meta name="description" content="قدّم الآن على بطاقات البنك العربي الائتمانية بسهولة وأمان. بدون رسوم خفية.">
-  <meta name="robots" content="index, follow">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>بطاقات البنك العربي - تقديم آمن</title>
+  <meta name="description" content="قدّم الآن للحصول على بطاقة البنك العربي الائتمانية بسهولة وأمان تام. عروض حصرية، تقسيط مريح، وبدون رسوم خفية.">
 
-  <!-- Meta Pixel Code -->
+  <!-- Google Tag Manager -->
   <script>
-    !function(f,b,e,v,n,t,s){
-      if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1274887881317355'); 
-    fbq('track', 'PageView');
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M3CQNRKB');
   </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1274887881317355&ev=PageView&noscript=1"/></noscript>
-  <!-- End Meta Pixel Code -->
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3LX72SK5V8"></script>
@@ -34,64 +25,167 @@
     gtag('config', 'G-3LX72SK5V8');
   </script>
 
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "sjkw3b13ep");
+  </script>
+
   <style>
-    body { font-family: 'Tajawal', sans-serif; background-color: #f8f9fa; }
-    header { background: #004b87; color: white; padding: 20px; text-align: center; }
-    .section { padding: 40px 20px; }
-    footer { background: #eee; padding: 20px; text-align: center; font-size: 14px; }
-    .btn-whatsapp { background-color: #25D366; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; display: inline-block; margin-top: 20px; }
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(135deg, #8B0000, #B80000);
+      color: white;
+      padding: 30px 15px;
+      text-align: center;
+    }
+    header img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    .lead {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: 20px auto;
+      text-align: center;
+      padding: 0 15px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px auto;
+    }
+    .feature {
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 10px;
+      width: 260px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .feature h3 {
+      color: #B80000;
+    }
+    .cta-button {
+      background-color: #B80000;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .cta-button:hover {
+      background-color: #8B0000;
+    }
+    footer {
+      background: #f0f0f0;
+      text-align: center;
+      color: #666;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
+    .popup-content {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 300px;
+    }
+    .popup button {
+      margin: 10px;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .confirm { background-color: #25d366; color: white; }
+    .cancel { background-color: #ccc; color: #333; }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>بطاقات البنك العربي</h1>
-  <p>التقديم على بطاقة ائتمانية بسهولة وأمان</p>
-</header>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3CQNRKB"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<section class="section text-center">
-  <h2>لماذا تختار بطاقاتنا؟</h2>
-  <ul class="list-unstyled">
-    <li>✔️ بدون رسوم إصدار</li>
-    <li>✔️ عروض حصرية للعملاء</li>
-    <li>✔️ حماية عالية للخصوصية</li>
-  </ul>
-  <button class="btn-whatsapp" data-bs-toggle="modal" data-bs-target="#whatsappModal">تقديم عبر واتساب</button>
-</section>
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/3416/3416049.png" alt="بطاقة بنكية">
+    <h1>💳 بطاقات البنك العربي</h1>
+    <p class="lead">قدّم الآن للحصول على بطاقتك الائتمانية بسهولة وأمان تام</p>
+  </header>
 
-<!-- Modal -->
-<div class="modal fade" id="whatsappModal" tabindex="-1" aria-labelledby="whatsappModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="whatsappModalLabel">تأكيد التحويل إلى واتساب</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+  <div class="container">
+    <p>استمتع بمزايا رائعة:</p>
+    <div class="features">
+      <div class="feature">
+        <h3>عروض حصرية</h3>
+        <p>خصومات وامتيازات لدى شركاء مختارين.</p>
       </div>
-      <div class="modal-body">
-        سيتم تحويلك إلى تطبيق واتساب للتقديم على البطاقة.<br>هل ترغب في المتابعة؟
+      <div class="feature">
+        <h3>تقسيط مريح</h3>
+        <p>قسّط مشترياتك بدون فوائد.</p>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
-        <a href="https://api.whatsapp.com/send?phone=966593017152&text=أرغب+في+التقديم+على+بطاقة+البنك+العربي" target="_blank" class="btn btn-success">نعم، المتابعة</a>
+      <div class="feature">
+        <h3>بدون رسوم خفية</h3>
+        <p>شفافية تامة في الرسوم والشروط.</p>
       </div>
     </div>
+
+    <a href="#" onclick="showConfirmPopup(); return false;" class="cta-button">📨 قدم الآن عبر واتساب</a>
   </div>
-</div>
 
-<section class="section">
-  <h3 class="text-center">من نحن؟</h3>
-  <p class="text-center">
-    نحن جهة رسمية تعمل على تسهيل حصول العملاء على بطاقات ائتمانية بأمان وسرعة. جميع البيانات محمية وتخضع لشروط الخصوصية.
-  </p>
-</section>
+  <footer>
+    جميع الحقوق محفوظة © البنك العربي 2025
+  </footer>
 
-<footer>
-  <p>جميع الحقوق محفوظة © البنك العربي</p>
-  <p>
-    <a href="#">سياسة الخصوصية</a> | <a href="#">الشروط والأحكام</a>
-  </p>
-</footer>
+  <div id="confirmPopup" class="popup">
+    <div class="popup-content">
+      <p style="font-size:18px;">هل ترغب بالانتقال إلى واتساب؟</p>
+      <button onclick="goToWhatsApp()" class="confirm">نعم</button>
+      <button onclick="hideConfirmPopup()" class="cancel">لا</button>
+    </div>
+  </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function showConfirmPopup() {
+      document.getElementById("confirmPopup").style.display = "flex";
+    }
+    function hideConfirmPopup() {
+      document.getElementById("confirmPopup").style.display = "none";
+    }
+    function goToWhatsApp() {
+      window.location.href = "https://wa.me/966542059865?text=مرحبًا، أرغب في التقديم على بطاقة البنك العربي";
+    }
+  </script>
+
 </body>
 </html>
